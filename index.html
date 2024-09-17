@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student ID Tracker</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Student ID Tracker</h1>
+        <p>Lake Worth Community High School</p>
+
+        <div class="input-section">
+            <input type="text" id="studentId" placeholder="Enter Student ID">
+            <button onclick="trackStudentId()">Submit</button>
+        </div>
+
+        <div class="report-section">
+            <h2>Track Report</h2>
+            <table id="reportTable">
+                <thead>
+                    <tr>
+                        <th>Student ID</th>
+                        <th>Count (Last 365 Days)</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Rows will be added here -->
+                </tbody>
+            </table>
+            <button onclick="printReport()">Print Report</button>
+        </div>
+    </div>
+
+    <footer>
+        Designed by Sam Dawsen
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>
